@@ -1,11 +1,18 @@
 #!/bin/bash
 #
-# Rofi wallpaper selector (swww)
+# ROFI WALLPAPER SELECTOR (swww)
 #
 
+#################
+### VARIABLES ###
+#################
 WALLDIR="$HOME/.local/share/Wallpapers"
 PROMPT="Wallpapers"
 
+
+###########################
+### WALLPAPER SELECTION ###
+###########################
 selected=$(find "$WALLDIR" -type f \( \
   -iname "*.jpg" -o \
   -iname "*.png" -o \
@@ -14,6 +21,9 @@ selected=$(find "$WALLDIR" -type f \( \
 
 [ -z "$selected" ] && exit 0
 
+#####################
+### SET WALLPAPER ###
+#####################
 # Ensure swww is running
 pgrep -x swww-daemon >/dev/null || swww-daemon &
 

@@ -1,4 +1,7 @@
+MenuBar=Disabled
+
 [General]
+UseTabForSwitchingSplitView=true
 Version=202
 ViewPropsTimestamp=2026,1,11,0,39,51.057
 
@@ -9,5 +12,5 @@ Places Icons Static Size=22
 [MainWindow]
 MenuBar=Disabled
 
-[UiSettings]
-ColorScheme=BreezeDark
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,glycin-heif,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,glycin-image-rs,jpegthumbnail,glycin-jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,glycin-svg,svgthumbnail
