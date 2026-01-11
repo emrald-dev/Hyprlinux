@@ -109,6 +109,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias v="nvim"
+alias ls="exa -l"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# To enable nvm command systemwide
+source /usr/share/nvm/init-nvm.sh
+export PATH="$HOME/.local/bin:$PATH"

@@ -12,8 +12,8 @@
 
 # Start official packages installation
 # sudo pacman -S --needed git curl wget base-devel brightnessctl \
-# zsh stow fzf fastfetch tree zed neovim swww firefox rofi obsidian \
-# pavucontrol p7zip ark noto-fonts \
+# zsh stow fzf fastfetch tree zed neovim swww firefox rofi-wayland obsidian \
+# pavucontrol p7zip ark noto-fonts xdg-user-dirs exa \
 
 
 # Start AUR helper installation
@@ -33,6 +33,9 @@
 ##########################
 ### FILES INSTALLATION ###
 ##########################
+# Use xdg to maker user directories
+# xdg-user-dirs-update
+
 # Symlink files where they are needed
 # sudo rm -r ~/.config/hypr
 # sudo rm -r ~/.config/kitty

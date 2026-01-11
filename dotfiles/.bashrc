@@ -12,3 +12,4 @@ PS1='[\u@\h \W]\$ '
 . "$HOME/.local/bin/env"
 
 source /usr/share/nvm/init-nvm.sh
+export PATH="$HOME/.local/bin:$PATH"
