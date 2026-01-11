@@ -31,7 +31,4 @@
 ##########################
 # Symlink files where they are needed
 # sudo rm -r "path"
-
-
-# Symlink dotfiles folder
 stow -d ~/Hyprlinux/ -t ~/ dotfiles
