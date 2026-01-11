@@ -3,7 +3,7 @@
 # Rofi wallpaper selector (swww)
 #
 
-WALLDIR="$HOME/Pictures/Wallpapers"
+WALLDIR="$HOME/.local/share/Wallpapers"
 PROMPT="Wallpapers"
 
 selected=$(find "$WALLDIR" -type f \( \
