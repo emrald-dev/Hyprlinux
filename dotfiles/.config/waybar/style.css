@@ -1,0 +1,16 @@
+* {
+    font-size: 12px;
+    font-weight: bold;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #ffffff;
+}
+
+#custom-notification {
+    font-family: "Geist Mono Nerd Font Propo";
+}

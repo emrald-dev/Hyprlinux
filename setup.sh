@@ -13,7 +13,7 @@
 # Start official packages installation
 # sudo pacman -S --needed git curl wget base-devel brightnessctl \
 # zsh stow fzf fastfetch tree zed neovim swww firefox rofi-wayland obsidian \
-# pavucontrol p7zip ark noto-fonts xdg-user-dirs exa \
+# pavucontrol p7zip ark noto-fonts xdg-user-dirs exa mpv waybar swaync \
 
 
 # Start AUR helper installation
@@ -22,7 +22,6 @@
 # cd yay
 # makepkg -si
 
-# Start AUR upgrade
 # yay -Syu
 
 
