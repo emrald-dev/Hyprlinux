@@ -2,13 +2,14 @@
   "layer": "top",
   "position": "top",
   "height": 24,
-  "spacing": 15,
-  "margin-left": 10,
-  "margin-right": 10,
+  // "spacing": 15,
+  "margin-left": 5,
+  "margin-right": 5,
+  "margin-top": 1,
 
   "modules-left": ["custom/text", "custom/text2", "custom/text3"],
-  "modules-center": [],
-  "modules-right": ["network", "custom/notification", "clock"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["clock", "network", "custom/notification", "custom/text9"],
   "custom/text": {
     "exec": "echo 'Apps'",
     "interval": 60,
@@ -23,6 +24,12 @@
   },
   "custom/text3": {
     "exec": "echo 'Help'",
+    "interval": 60,
+    "return-type": "plain",
+    "on-click": "",
+  },
+  "custom/text9": {
+    "exec": "echo 'panel'",
     "interval": 60,
     "return-type": "plain",
     "on-click": "",
@@ -61,8 +68,8 @@
   },
   "clock": {
     "interval": 60,
-    "format": "{:%A, %B %d, %Y}",
-    "tooltip-format": "{:%Y-%m-%d}",
+    "format": "{:%H:%M %B %d, %Y}",
+    "tooltip-format": "{:%Y-%m-%d %H:%M:%S}",
     "max-length": 25,
   },
 }

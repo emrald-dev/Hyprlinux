@@ -1,16 +1,94 @@
 * {
+    font-family: "Adwaita Sans";
     font-size: 12px;
     font-weight: bold;
     min-height: 0;
     padding: 0;
     margin: 0;
+    border-radius: 8;
 }
 
 window#waybar {
-    background: transparent;
+    background: rgba(0, 0, 0, 0.9);
     color: #ffffff;
 }
 
-#custom-notification {
+#workspaces {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2 7 2 7;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+#workspaces button {
+    margin-left: 2;
+    margin-right: 2;
+    padding: 0 7 0 7;
+    color: transparent;
+}
+
+#workspaces button.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    padding: 0 15 0 15;
+}
+
+#custom-notification,
+#network,
+#custom-text9 {
     font-family: "Geist Mono Nerd Font Propo";
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    padding: 0 8 0 8;
+    border-radius: 0;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+#network {
+    border-top-left-radius: 8;
+    border-bottom-left-radius: 8;
+}
+
+#custom-notification {
+    margin-right: 0.8rem;
+    border-top-right-radius: 8;
+    border-bottom-right-radius: 8;
+}
+
+#clock {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    margin-right: 0.5rem;
+    padding: 0 7 0 7;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+#custom-text,
+#custom-text2,
+#custom-text3 {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-radius: 0;
+    padding: 0 7 0 7;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+#custom-text {
+    margin-left: 0.8rem;
+    border-top-left-radius: 7.5;
+    border-bottom-left-radius: 7.5;
+}
+
+#custom-text3 {
+    border-top-right-radius: 7.5;
+    border-bottom-right-radius: 7.5;
+}
+
+#custom-text9 {
+    margin-right: 0.8rem;
+    border-top-right-radius: 7.5;
+    border-bottom-right-radius: 7.5;
 }

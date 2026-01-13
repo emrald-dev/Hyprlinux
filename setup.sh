@@ -13,7 +13,8 @@
 # Start official packages installation
 # sudo pacman -S --needed git curl wget base-devel brightnessctl \
 # zsh stow fzf fastfetch tree zed neovim swww firefox rofi-wayland obsidian \
-# pavucontrol p7zip ark noto-fonts xdg-user-dirs exa mpv waybar swaync \
+# pavucontrol p7zip ark noto-fonts xdg-user-dirs exa mpv waybar swaync nwg-look \
+# kvantum adw-gtk-theme papirus-icon-theme \
 
 
 # Start AUR helper installation
