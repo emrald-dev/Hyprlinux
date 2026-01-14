@@ -9,7 +9,7 @@
 
   "modules-left": ["custom/text", "custom/text2", "custom/text3"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["clock", "network", "custom/notification", "custom/text9"],
+  "modules-right": ["clock", "network", "custom/notification"],
   "custom/text": {
     "exec": "echo 'Apps'",
     "interval": 60,
@@ -28,23 +28,19 @@
     "return-type": "plain",
     "on-click": "",
   },
-  "custom/text9": {
-    "exec": "echo 'panel'",
-    "interval": 60,
-    "return-type": "plain",
-    "on-click": "",
-  },
   "network": {
     "interface": "eno1",
-    "interval": 1,
-    "format-wifi": " ",
-    "format-ethernet": "󰍹󰈁",
-    "format-alt": " {ipaddr} {netmask}",
-    "format-disconnected": "",
-    "tooltip": true,
-    "tooltip-format-ethernet": "{ifname} {gwaddr}\n{bandwidthDownBytes} {bandwidthUpBytes}",
-    "tooltip-format-wifi": "{ifname} {essid} ({signalStrength}%)\n{bandwidthDownBytes} {bandwidthUpBytes}",
-    "on-click-right": "footclient -e neomutt -F /home/babkock/.muttrc",
+    "format": "{ifname}",
+    "format-wifi": " {signalStrength}%",
+    "format-ethernet": "  {ifname}",
+    "format-disconnected": "Disconnected ⚠",
+    "tooltip-format": " {ifname} via {gwaddri}",
+    "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
+    "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50,
+    "on-click": "~/.config/ml4w/settings/networkmanager.sh",
+    "on-click-right": "~/.config/ml4w/scripts/nm-applet.sh toggle",
   },
   "custom/notification": {
     "tooltip": true,
@@ -69,7 +65,6 @@
   "clock": {
     "interval": 60,
     "format": "{:%H:%M %B %d, %Y}",
-    "tooltip-format": "{:%Y-%m-%d %H:%M:%S}",
     "max-length": 25,
   },
 }
